@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'book-swap-hub';
+  currentYear: number = new Date().getFullYear();
 }

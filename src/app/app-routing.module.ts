@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { LoginComponent } from './login/login.component';
-import { MainMenuComponent } from './main-menu/main-menu.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {
@@ -15,10 +16,14 @@ const routes: Routes = [
     path: 'login',
     component: LoginComponent,
   },
-  {
-    path: 'main-menu',
-    component: MainMenuComponent,
-  }
+  { 
+    path: 'about', 
+    component: AboutComponent 
+  },
+  { 
+    path: 'contact', 
+    component: ContactComponent 
+  },
 ];
 
 @NgModule({

@@ -6,12 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-  loginData = {
-    username: '',
-    password: '',
-  };
+  usuario: string = '';
+  senha: string = '';
 
   onSubmit() {
-    // Lógica para processar o envio do formulário aqui
+    console.log('Usuário:', this.usuario);
+    console.log('Senha:', this.senha);
   }
 }

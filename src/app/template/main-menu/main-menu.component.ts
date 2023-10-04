@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-menu.component.css']
 })
 export class MainMenuComponent {
-
+  loggedIn: boolean = true; // Defina isso com base na autenticação do usuário
+  
 }
