@@ -1,0 +1,56 @@
+/* list-books.component.css */
+
+/* Estilo base para o card */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    background-color: #fff;
+  }
+  
+  /* Efeito de hover para o card */
+  .card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+  }
+  
+  /* Estilos para o título do card */
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para o conteúdo do card (detalhes do livro, etc.) */
+  .card-content {
+    font-size: 14px;
+  }
+  
+  /* Exemplo de classe de cor de contorno para diferentes gêneros */
+  .border-primary {
+    border-color: #007bff; /* Azul */
+  }
+  
+  .border-success {
+    border-color: #28a745; /* Verde */
+  }
+  
+  .border-info {
+    border-color: #17a2b8; /* Azul-claro */
+  }
+  
+  .border-danger {
+    border-color: #dc3545; /* Vermelho */
+  }
+  
+  .border-warning {
+    border-color: #ffc107; /* Amarelo */
+  }
+  
+  .border-secondary {
+    border-color: #6c757d; /* Cinza */
+  }
+  

@@ -13,15 +13,23 @@ export class LoginComponent {
   login: string = ''
   pass: string = ''
 
+  ngOnInit() {
+    let login = localStorage.getItem("login")
+    if(login !== null && login !== ''){
+      this.router.navigate(['/menu'], {
+        queryParams: { id: '1', login: login },
+      })
+    }
+  }
+
   onSubmit() {
-    //console.log('Usuário:', this.login)
-    //console.log('Senha:', this.pass)
     const url = 'http://localhost:3000/users/?login=' + this.login + '&pass=' + this.pass;
     console.log('URL completa:', url);
 
     this.http.get<any>(url)
     .subscribe(response => {
       if (Array.isArray(response) && response.length > 0) {
+        localStorage.setItem("login", this.login)
         this.router.navigate(['/menu'], {
           queryParams: { id: '1', login: this.login },
         })

@@ -1,4 +1,3 @@
-<!-- menu -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Book Swap Hub</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -7,13 +6,14 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="/about">Sobre</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/contact">Contato</a>
-      </li>
+      <app-main-menu-element #about [ref]="'about'"></app-main-menu-element>
+      <app-main-menu-element #contact [ref]="'contact'"></app-main-menu-element>
+      <app-main-menu-element #logout [ref]="'logout'"></app-main-menu-element>
     </ul>
   </div>
+  <div class="ml-auto">
+    <span *ngIf="loggedInUser" class="navbar-text">
+      Olá, {{ loggedInUser }}
+    </span>
+  </div>
 </nav>
-  <!-- fim menu -->

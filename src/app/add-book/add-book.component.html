@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row justify-content-center align-items-center centraliza-verticalmente">
+        <div class="col-md-6">
+            <div class="card rounded">
+                <div class="card-body caixa-cadastrar-livro">
+                    <h2 class="card-title text-center">Cadastrar Livro</h2>
+                    <form (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="titulo">Título do Livro</label>
+                            <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Digite o título do livro" [(ngModel)]="livro.titulo">
+                        </div>
+                        <div class="form-group">
+                            <label for="dataCompra">Data de Compra</label>
+                            <input type="date" class="form-control" id="dataCompra" name="dataCompra" [(ngModel)]="livro.dataCompra">
+                        </div>
+                        <div class="form-group">
+                            <label for="condicao">Condição do Livro</label>
+                            <select class="form-control" id="condicao" name="condicao" [(ngModel)]="livro.condicao">
+                                <option *ngFor="let condicao of condicoes" [value]="condicao.nome">{{ condicao.nome }}</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="genero">Gênero</label>
+                            <select class="form-control" id="genero" name="genero" [(ngModel)]="livro.genero">
+                                <option *ngFor="let genero of generos" [value]="genero.nome">{{ genero.nome }}</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comentario">Comentários/Anotações</label>
+                            <textarea class="form-control" id="comentario" name="comentario" placeholder="Digite comentários ou anotações sobre o livro" [(ngModel)]="livro.comentario"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Salvar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

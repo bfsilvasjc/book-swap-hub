@@ -7,6 +7,9 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { PerfilComponent } from './perfil/perfil.component';
 import { MenuComponent } from './menu/menu.component';
+import { LogoutComponent } from './logout/logout.component';
+import { AddBookComponent } from './add-book/add-book.component';
+import { ListBooksComponent } from './list-books/list-books.component';
 
 const routes: Routes = [
   {
@@ -33,6 +36,18 @@ const routes: Routes = [
   { 
     path: 'menu', 
     component: MenuComponent
+  },
+  { 
+    path: 'logout', 
+    component: LogoutComponent
+  },
+  { 
+    path: 'addBook', 
+    component: AddBookComponent
+  },
+  { 
+    path: 'bookslist', 
+    component: ListBooksComponent
   },
 ];
 
