@@ -10,6 +10,10 @@ import { FooterComponent } from './template/footer/footer.component';
 import { MainMenuComponent } from './template/main-menu/main-menu.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MenuComponent } from './menu/menu.component';
+import { MenuCardComponent } from './menu-card/menu-card.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,16 @@ import { ContactComponent } from './contact/contact.component';
     MainMenuComponent,
     AboutComponent,
     ContactComponent,
+    PerfilComponent,
+    MenuComponent,
+    MenuCardComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

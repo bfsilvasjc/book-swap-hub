@@ -5,6 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { MenuComponent } from './menu/menu.component';
 
 const routes: Routes = [
   {
@@ -14,7 +16,11 @@ const routes: Routes = [
   },
   {
     path: 'login',
-    component: LoginComponent,
+    component: LoginComponent
+  },
+  {
+    path: 'profile',
+    component: PerfilComponent
   },
   { 
     path: 'about', 
@@ -23,6 +29,10 @@ const routes: Routes = [
   { 
     path: 'contact', 
     component: ContactComponent 
+  },
+  { 
+    path: 'menu', 
+    component: MenuComponent
   },
 ];
 

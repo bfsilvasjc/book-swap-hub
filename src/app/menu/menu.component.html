@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-9">
+            <div class="card rounded">
+                <div class="card-body">
+                    <h2 class="card-title text-center">Menu Principal</h2>
+                    <div class="row">
+                        <app-menu-card class="col-md-4" [title]="'Editar Perfil'" (cardClicked)="onClick(1)"></app-menu-card>
+                        <app-menu-card class="col-md-4" [title]="'Cadastrar Livro'" (cardClicked)="onClick(2)"></app-menu-card>
+                        <app-menu-card class="col-md-4" [title]="'Meus Livros'" (cardClicked)="onClick(3)"></app-menu-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
