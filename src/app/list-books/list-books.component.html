@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>Lista de Livros Cadastrados</h2>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let livro of livros">
+        <div class="card" [ngClass]="getCardClass(livro.genero)" (click)="showDetails(livro)">
+            <div class="card-body">
+                <h4 class="card-title">{{ livro.nome }}</h4>
+                <p><strong>Data de Compra:</strong> {{ livro.dataCompra }}</p>
+                <p><strong>Condição:</strong> {{ livro.condicao }}</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- Visualização lateral -->
+<div *ngIf="sideViewComponent && sideViewComponent.isSideViewVisible" class="side-view">
+    <app-side-view #sideView1></app-side-view>
+    <button (click)="hideSideView()">Fechar</button>
+</div>

@@ -1,0 +1,15 @@
+.card-menu {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    border-radius: 20%;
+}
+
+.card-menu:hover {
+    transform: scale(1.02);
+}
+
+.card {
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

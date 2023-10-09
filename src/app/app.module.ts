@@ -10,6 +10,15 @@ import { FooterComponent } from './template/footer/footer.component';
 import { MainMenuComponent } from './template/main-menu/main-menu.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MenuComponent } from './menu/menu.component';
+import { MenuCardComponent } from './menu-card/menu-card.component';
+import { AddBookComponent } from './add-book/add-book.component';
+import { LogoutComponent } from './logout/logout.component';
+import { ListBooksComponent } from './list-books/list-books.component';
+import { SideViewComponent } from './side-view/side-view.component';
+import { MainMenuElementComponent } from './template/main-menu-element/main-menu-element.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +28,21 @@ import { ContactComponent } from './contact/contact.component';
     MainMenuComponent,
     AboutComponent,
     ContactComponent,
+    PerfilComponent,
+    MenuComponent,
+    MenuCardComponent,
+    AddBookComponent,
+    LogoutComponent,
+    ListBooksComponent,
+    SideViewComponent,
+    MainMenuElementComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
